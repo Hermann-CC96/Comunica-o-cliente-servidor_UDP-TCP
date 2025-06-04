@@ -5,6 +5,7 @@ demostrar a comunicação de socket em python. O calculo do tempo de viagem ida 
 do pacote perdido em UDP. Ele serve como atividade para Rede de Computadores na Universidade Federal de Santa Catarina (UFSC).
 
 Descrição
+
 Nesse projecto o foco foi criar um sistema cliente - servidor com protocolo UDP e TCP que permite a comunicação 
 entre dois host distinto, porém na mesmo rede. 
 A solução baseada na conexão UDP, foi devidida em dois grande parte:
