@@ -3,11 +3,11 @@ import time
 import datetime
 
 # Definir o IP do servidor (substitua pelo IP da máquina do servidor)
-SERVER_IP = '127.0.0.1' # Por exemplo, '192.168.1.10'
 # Definir a porta (deve ser a mesma do servidor)
-PORT = 5000
-
 # Criar um socket TCP
+
+SERVER_IP = '127.0.0.1' # Por exemplo, '192.168.1.10'
+PORT = 5000
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:

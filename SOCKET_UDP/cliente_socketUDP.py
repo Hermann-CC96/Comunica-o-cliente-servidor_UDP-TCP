@@ -2,24 +2,17 @@ import socket
 import datetime
 import time
 
+HOST_IP = "192.168.0.103"
+PORT = 4000
 
-#Defini o IP do servidor
-#Defini a porta de comunicação UPD para cliente
-HOST_IP = "200.135.94.199"
-PORT = 12000
-
-#Cria socket UDP do clientev 
 client_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-#Defini timeout de 1s para o socket
 client_sock.settimeout(1)
 
 for i in range(1,11):
     send_time = time.time()
     mensagen = f"PING {1}: {datetime.datetime.now()}"
     try:
-        # Cria dategrame com IP do servidor e port
-        # Invia Mensagem via client_socket
+        
         client_sock.sendto(mensagen.encode(),(HOST_IP, PORT))
         print(f"Ping {i} enviado: {mensagen}")
         
