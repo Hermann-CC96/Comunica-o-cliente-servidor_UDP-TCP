@@ -1,4 +1,6 @@
-# Projeto: Comunicação TCP Cliente-Servidor – PING/PONG com RTT
+# Projeto: Comunicação (UDP e TCP) Cliente-Servidor – PING/PONG com RTT
+
+Este projeto é uma implementação de uma aplicação cliente-servidor do tipo "Ping-Pong" em Python, desenvolvida como parte de uma atividade acadêmica. A solução inclui duas versões distintas: uma utilizando o protocolo UDP e outra utilizando TCP, para demonstrar e comparar as características de cada protocolo de transporte
 
 ## 📌 Descrição
 
