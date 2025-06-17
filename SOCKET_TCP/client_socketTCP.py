@@ -6,7 +6,7 @@ import datetime
 # Definir a porta (deve ser a mesma do servidor)
 # Criar um socket TCP
 
-SERVER_IP = '127.0.0.1' # Por exemplo, '192.168.1.10'
+SERVER_IP = '192.168.0.103' # Por exemplo, '192.168.1.10'
 PORT = 5000
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
