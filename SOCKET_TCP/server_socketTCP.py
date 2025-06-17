@@ -3,7 +3,7 @@ import datetime
 import time
  
 PORT = 5000
-HOST = '192.168.0.103'
+HOST = '200.135.94.239'
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverSocket.bind((HOST, PORT))
