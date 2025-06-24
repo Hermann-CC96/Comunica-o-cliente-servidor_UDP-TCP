@@ -2,11 +2,8 @@ import socket
 import time
 import datetime
 
-# Definir o IP do servidor (substitua pelo IP da máquina do servidor)
-# Definir a porta (deve ser a mesma do servidor)
-# Criar um socket TCP
 
-SERVER_IP = "192.168.0.102", # Por exemplo, '192.168.1.10'
+SERVER_IP = '127.0.0.1' 
 PORT = 5000
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -24,9 +21,7 @@ try:
             # Enviar a mensagem
             clientSocket.send(message.encode())
             print(f"Ping {i} enviado: {message}")
-
-            # Receber a resposta
-            # O TCP aguarda a resposta no mesmo fluxo de conexão
+            
             data = clientSocket.recv(1024) # Tamanho do buffer
             receive_time = time.time()
             rtt = (receive_time - send_time) * 1000 # RTT em milissegundos
