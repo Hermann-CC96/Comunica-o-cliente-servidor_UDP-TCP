@@ -2,8 +2,8 @@ import socket
 import datetime
 import time
 
-HOST_IP = "192.168.0.103"
-PORT = 4000
+HOST_IP = "192.168.0.102"
+PORT = 5000
 
 client_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client_sock.settimeout(1)
